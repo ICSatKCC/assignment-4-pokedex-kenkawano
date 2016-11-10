@@ -142,7 +142,7 @@ binary search tree, this will make it inconsistent.
 `public void remove( Pokemon p)`
  * Wrapper method that calls recursive remove method with root
  
-`private Pokenode remove( Pokemon p)`
+`private Pokenode remove(PokeNode node,  Pokemon p)`
  * decrements numCaught
  * Removes Pokemon p from the tree if numCaught == 0
  * Throws exception if p not in the tree
