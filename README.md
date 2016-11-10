@@ -1,4 +1,4 @@
-# Assignment 4 - Pokedex Binary Search Tree and Hash Table
+# Assignment 4 - Pokedex Binary Search Tree
 
  * 100 points
  * Due Wed 11/23
