@@ -55,12 +55,14 @@ The driver program should have a menu loop with these functionalities:
 * Catch Pokemon
   * Add new Pokemon to the BST
   * Increase the count of number caught of a Pokemon already in the tree.
+  * Use your sub-menu from Assignment 1 to choose Pokemon
   
 * Trade Pokemon
   * Lower the quantity of a caught Pokemon in the BST.
   * Make sure you don't trade Pokemon you don't have! Caught quantity cannot become negative.
   * Remove Pokemon from the tree that are all traded away.
-
+  * Use your sub-menu from Assignment 1 to choose Pokemon
+  
 * Print out the Pokedex of Pokemon ordered by number (inorder traversal)  and how many of each have been caught.
 
 The class methods described below are there to give you an idea of what will be needed. 
