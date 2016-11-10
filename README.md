@@ -32,6 +32,22 @@ ordered by the Pokemon **number** datafield (NOT the compareTo method ordering!)
 
 In order to do this you must put Pokemon objects into PokeNodes and add the PokeNodes to the PokeTree object.
 
+----
+**Use the example code in Laulima --> Resources --> Week 11 - Trees_Heaps as a template**
+* BinaryNode.java
+* BinarySearchTree.java
+* BinarySearchTreeDriver.java
+
+Except in this assignment, you're not going to make a generic BST, it should be tailored specifically to Pokemon objects.
+
+--- 
+Required classes:
+* Pokedex.java, which is your driver class
+* PokeTree.java, which will implement all the binary search tree functionality
+* PokeNode.java, (tree node) which will create nodes for your tree.
+
+---
+
 ##Pokedex.java
 
 The driver program should have a menu loop with these functionalities:
@@ -47,29 +63,16 @@ The driver program should have a menu loop with these functionalities:
 
 * Print out the Pokedex of Pokemon ordered by number (inorder traversal)  and how many of each have been caught.
 
-----
-**Use the example code in Laulima --> Resources --> Week 11 - Trees_Heaps as a template**
-* BinaryNode.java
-* BinarySearchTree.java
-* BinarySearchTreeDriver.java
-
-Except for this assignment, you're not going to make a generic BST, it will be tailored specifically to Pokemon objects.
-
-The classes and methods described below are there to give you an idea of what is required from you. 
+The class methods described below are there to give you an idea of what will be needed. 
 You are free to organize your project any way you want as long as you have AT LEAST these three required classes 
 and functionality given above.
 
 Do not forget that you need to validate everything, thus you will need to have exception classes. 
 These may be included in the class files like some of our example code has done, or in their own files.
 
-Required classes:
-* Pokedex.java, which is your driver class
-* PokeTree.java, which will implement all the binary search tree functionality
-* PokeNode.java, (tree node) which will create nodes for your tree.
-        
-
+####Comments are very important
 Since you will have complete authority in regards to your code design, it is VERY important that you add explicit comments 
-to your code. This can add or take away points from your grade. Comments are very important.
+to your code. This can add or take away points from your grade. 
 
 ## Suggested Methods for your classes
 
@@ -113,6 +116,8 @@ to your code. This can add or take away points from your grade. Comments are ver
 
 **Note:** There is no setPokemon method. We don't want anybody to change the Pokemon in a node that is already part of the 
 binary search tree, this will make it inconsistent. 
+
+---
 
 ### PokeTree.java
 
@@ -162,18 +167,25 @@ private void printPokeTree(PokeNode root){
       }
 }
 ```
-* This recursive method takes the root as a parameter and will print your tree in preorder traversal. 
+* This recursive method takes the root as a parameter and will print tree in **preorder traversal**. 
 * It is good for debugging purposes.
 * You may copy and paste this method into your PokeTree class.
 
+---
 
+##Extra Credit
+1. Add more Pokemon families. 10 points per family - see: [Species Stats](https://thesilphroad.com/research) 
+2. Add ASCII art images to your Pokemon classes and print them with the Pokedex. These can be stored as long Strings in your objects. examples: [Pokemon ASCII art](http://www.ascii-code.com/ascii-art/video-games/pokemon.php) (variable points)
+3. Rather than keeping the art directly in your Pokemon objects, make a HashMap with the Pokemon species as the key and the ASCII art string as the value. Store this as part of the PokeTree (hard coded to build when constructor is called) and access during printing. (variable points)
+
+----
 
 Learning Outcomes:
 
 For this assignment, you will practice/learn:
+* Creating and using binary search trees.
+* Use binary tree traversals.
+* Practice your skills in creating and communicating several classes.
 
-    Creating and using binary search trees.
-    Use binary tree traversals.
-    Practice your skills in creating and communicating several classes.
-
+---
 If you have any questions please e-mail Lisa:  ljmiller@hawaii.edu
